@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <style>
+        body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: lightskyblue;
+ 
+      
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #555;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 42%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a.active {
+    background-color: #080505;
+}
+
+section {
+    padding: 20px;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding:15px;margin-left: 25%;
+}
+
+li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    text-align: center;
+    
+}
+
+img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0%;
+}
+.slideshow-container {
+  position:center;
+  max-width: 100%;
+  margin: auto;
+  
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.slide img {
+  width: 35% ;
+  height: 28%;
+  display: flex;
+        justify-content: center;
+        margin-left: 32%;
+        margin-top: 5%;
+       
+
+};
+.pi{
+    margin-left: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html".html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>OUR STORY :</h2>
+        <p class="pi">Our wholesale shop is your one-stop destination for all your bulk purchasing needs. We provide a vast selection of high-quality products at competitive prices, catering to retailers, businesses, and entrepreneurs. With our extensive inventory and excellent customer service, we strive to simplify  your procurement process and help you maximize your profits. Whether you're looking for groceries, electronics, clothing, or household goods, our wholesale shop is committed to meeting your demands and exceeding your expectations. Experience the convenience and value of shopping with us, where wholesale buying becomes a seamless and rewarding experience</p>
+    </section>
+    <section>
+        <h2>OUR TEAM :</h2><br><br>
+        <ul>
+            <li>
+                <img src="pics/rajesh.jpg" alt="Team Member 1" >
+                <h3>Name : RAJESH</h3>
+                <p>hall.no : 21eg107b56</p>
+                <p>contact : 856876xxxx</p>
+            </li>
+            <li>
+                <img src="pics/sravya.jpg" alt="Team Member 2" >
+                <h3> Name : SRAVYA</h3>
+                <p>hall.no : 21eg107b42</p>
+                <p>contact : 756876xxxx</p>
+                
+            </li>
+            <li>
+                <img src="pics/sai.jpg" alt="Team Member 3" >
+                <h3>Name : SAIRAM</h3>
+                <p>hall.no : 21eg107b27</p>
+                <p>contact : 956876xxxx</p>
+                
+            </li>
+        </ul>
+        
+    </section>
+    <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="pics/Simage1.jpg" alt="Image 1"  >
+        </div>
+        <div class="slide fade">
+          <img src="pics/Simage2.jpg" alt="Image 2" >
+        </div>
+        <div class="slide fade">
+          <img src="pics/Simage3.jpg" alt="Image 3" >
+        </div>
+        <footer>
+           
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+        </footer>
+    <script>
+        // JavaScript to control the slideshow
+        var slides = document.getElementsByClassName("slide");
+        var currentSlide = 0;
+        
+        function showSlide() {
+          for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          currentSlide++;
+          if (currentSlide > slides.length) {
+            currentSlide = 1;
+          }
+          slides[currentSlide - 1].style.display = "block";
+          setTimeout(showSlide, 3000); // Change slide every 6 seconds
+        }
+        
+        showSlide();
+        </script>
+    
+    
+</body>
+</html> 

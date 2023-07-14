@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Page</title>
+  <link rel="stylesheet"  href="css/styles.css">
+  <link rel="icon" href="pics/favicon1.png">
+    
+  <style>
+    .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  body{
+    background-image: url("pics/contact.jpg");
+    display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        
+        background-size: cover;
+        background-position: center;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0%;
+}
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Please feel free to get in touch with us using the form below or contact us directly:</p>
+    <div class="contact-details">
+      <p><strong>Email:</strong> info@example.com</p>
+      <p><strong>Phone:</strong> +1 123-456-7890</p>
+      <p><strong>Address:</strong> 123 Main St, City, Country</p>
+    </div>
+    <form action="mailto:sairampogula0@gmail.com" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <h3>Question 1</h3>
+      <p>Answer 1</p>
+    </div>
+    <div class="faq">
+      <h3>Question 2</h3>
+      <p>Answer 2</p>
+    </div>
+    <div class="faq">
+      <h3>Question 3</h3>
+      <p>Answer 3</p>
+    </div>
+    <footer>
+           
+      <p>&copy; 2023 Your Company. All rights reserved.</p>
+  </footer>
+  </div>
+  
+</body>
+</html>
